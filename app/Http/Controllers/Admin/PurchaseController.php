@@ -40,7 +40,7 @@ class PurchaseController extends Controller
                     }
                 })
                 ->addColumn('cost_price',function($purchase){
-                    return settings('app_currency','$'). ' '. $purchase->cost_price;
+                    return settings('app_currency','₹'). ' '. $purchase->cost_price;
                 })
                 ->addColumn('supplier',function($purchase){
                     return $purchase->supplier->name;

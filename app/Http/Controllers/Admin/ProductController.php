@@ -45,7 +45,7 @@ class ProductController extends Controller
                     return $category;
                 })
                 ->addColumn('price',function($product){                   
-                    return settings('app_currency','$').' '. $product->price;
+                    return settings('app_currency','₹').' '. $product->price;
                 })
                 ->addColumn('quantity',function($product){
                     if(!empty($product->purchase)){
@@ -199,7 +199,7 @@ class ProductController extends Controller
                     return $category;
                 })
                 ->addColumn('price',function($product){                   
-                    return settings('app_currency','$').' '. $product->price;
+                    return settings('app_currency','₹').' '. $product->price;
                 })
                 ->addColumn('quantity',function($product){
                     if(!empty($product->purchase)){
@@ -264,7 +264,7 @@ class ProductController extends Controller
                     return $category;
                 })
                 ->addColumn('price',function($product){                   
-                    return settings('app_currency','$').' '. $product->price;
+                    return settings('app_currency','₹').' '. $product->price;
                 })
                 ->addColumn('quantity',function($product){
                     if(!empty($product->purchase)){

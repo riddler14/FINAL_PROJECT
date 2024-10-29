@@ -25,7 +25,7 @@
                         <i class="fe fe-money"></i>
                     </span>
                     <div class="dash-count">
-                        <h3>{{AppSettings::get('app_currency', '$')}} {{$today_sales}}</h3>
+                        <h3>{{AppSettings::get('app_currency', '₹')}} {{$today_sales}}</h3>
                     </div>
                 </div>
                 <div class="dash-widget-info">
